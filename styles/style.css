@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-principal:#EFB036;
+    --cor-secundaria:#3B6790;
+    --cor-terciaria:#23486A;
+    --cor-hover: #4C7B8B
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+strong {
+    color: var(--cor-terciaria)
+}
+.cabecalho {
+    color: var(--cor-terciaria);
+
+    padding: 4% 0% 0% 12%;
+}
+.cabecalho__navegacao {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.cabecalho__navegacao__secoes {
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.apresentacao__links__redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: inherit;
+    color: var(#FFFFFF);
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover {
+    background-color: var(--cor-hover);
+}
+h2 {
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+footer {
+    background-color: var(--cor-terciaria);
+    padding: 45px;
+}
+.rodape {
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
