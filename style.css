@@ -4,14 +4,37 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --cor-principal:#EFB036;
+    --cor-secundaria:#3B6790;
+    --cor-terciaria:#23486A;
+    --cor-hover: #4C7B8B
+}
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: black;
-    color: #FFFFFF;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
 }
 strong {
-    color: cyan
+    color: var(--cor-terciaria)
+}
+.cabecalho {
+    color: var(--cor-terciaria);
+
+    padding: 4% 0% 0% 12%;
+}
+.cabecalho__navegacao {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.cabecalho__navegacao__secoes {
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
 .apresentacao {
     margin: 10%;
@@ -40,17 +63,46 @@ strong {
 .apresentacao__links {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
-a {
-    background-color: cyan;
+.apresentacao__links__redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
     text-align: center;
-    width: 280px;
-    border-radius: 16px;
-    padding-top: 21.5px;
-    padding-bottom: 21.5px;
-    text-decoration: none;
-    color: #000000;
-    font-family: "Montserrat", serif;
+    border-radius: 8px;
+    font-size: 24px;
     font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: inherit;
+    color: var(#FFFFFF);
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover {
+    background-color: var(--cor-hover);
+}
+h2 {
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+footer {
+    background-color: var(--cor-terciaria);
+    padding: 45px;
+}
+.rodape {
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
 }

@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netto's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__navegacao">
+            <a class="cabecalho__navegacao__secoes" href="index.html">Página Inicial</a>
+            <a class="cabecalho__navegacao__secoes" href="about.html">Sobre Mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio a outro nível<strong> com um profissional de qualidade!</strong></h1>
             <p class="apresentacao__conteudo__texto">Olá! Sou Luis Netto, desenvolvedor com conhecimentos em HTML, CSS, JavaScript e Python. Estou em busca oportunidades para provar o meu valor. Vamos conversar?</p>
             <div class="apresentacao__links">
-                <a href="https://linkedin.com/in/nettoluis">Linkedin</a>
-                <a href="https://github.com/nettoluis">GitHub</a>
+                <h2>Acesse minhas redes:</h2>
+                <a class="apresentacao__links__redes" href="https://linkedin.com/in/nettoluis">
+                    <img src="./assets/linkedin.png">
+                    Linkedin
+                </a>
+                <a class="apresentacao__links__redes" href="https://github.com/nettoluis">
+                    <img src="./assets/github.png">
+                    GitHub
+                </a>
             </div>
         </section>
-        <img src="pfp.png">
+        <img src="./assets/pfp.png">
     </main>
-    <footer></footer>
+    <footer>
+        <p class="rodape">
+        Desenvolvido por Luis Netto.
+        </p>
+    </footer>
 </body>
 </html>
